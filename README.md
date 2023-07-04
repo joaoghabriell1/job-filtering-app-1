@@ -1,5 +1,9 @@
 # job-filtering-app
 
+### The idea
+
+- O design para este app é fornecido pelo [Frontend Mentor](https://www.frontendmentor.io/challenges/devjobs-web-app-HuvC_LP4l)
+
 ### Links
 
 - [Live Site URL](https://job-filtering-app-portf.netlify.app/)
