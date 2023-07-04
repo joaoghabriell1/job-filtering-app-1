@@ -1,4 +1,4 @@
-# job-filtering-app-1
+# job-filtering-app
 
 
 ### Tech Stack
