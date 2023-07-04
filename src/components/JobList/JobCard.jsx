@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import classes from "./JobCard.module.css";
-import images from "../../assets/logos/imagesIndex";
+import useImage from "../../hooks/useImage";
 
 const JobCard = (props) => {
-  const logoUrl = `${images[props.company.toLowerCase()]}`;
+  const image = useImage(props.company.toLowerCase().replace(" ", ""));
+
   return (
     <li>
       <Link to={`${props.id}`}>
@@ -12,7 +13,7 @@ const JobCard = (props) => {
             style={{ background: `${props.logoBg}` }}
             className={classes["job-card__logo-container"]}
           >
-            <img src={logoUrl} alt="logo" />
+            <img src={image} alt="logo" />
           </div>
           <div className={classes["flex-container"]}>
             <span>{props.postedAt}</span>

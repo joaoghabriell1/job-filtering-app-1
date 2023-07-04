@@ -1,8 +1,8 @@
 import styles from "./CompanyCard.module.css";
-import images from "../../assets/logos/imagesIndex";
+import useImage from "../../hooks/useImage";
 
 const CompanyCard = (props) => {
-  const src = String(props.company).toLocaleLowerCase();
+  const image = useImage(props.company.toLowerCase().replace(" ", ""));
 
   return (
     <header className={styles.header}>
@@ -11,7 +11,7 @@ const CompanyCard = (props) => {
           style={{ background: props.logobg }}
           className={styles["header__logo"]}
         >
-          <img src={images[src]} alt="logo" />
+          <img src={image} alt="logo" />
         </div>
         <div className={styles["info-wrapper"]}>
           <div className={styles["info-container"]}>
