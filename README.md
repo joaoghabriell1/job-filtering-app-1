@@ -1,13 +1,11 @@
 # job-filtering-app-1
 
 
-### Built with
+### Tech Stack
 
-- Semantic HTML5 markup
-- Flexbox
-- CSS Grid
+- HTML5
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-- [react-hook-form](https://react-hook-form.com/) - for form validation
-- [framer-motion](https://www.framer.com/motion/) - for animation
+- [React-Router](https://reactjs.org/)
+- [Styled Components](https://styled-components.com/) - Para estilização dos componentes;
+- [react-hook-form](https://react-hook-form.com/) - Para validação do formulário de login e signup;
+- [firebase](https://firebase.google.com/) - Como banco de dados e para validação de usuário;
