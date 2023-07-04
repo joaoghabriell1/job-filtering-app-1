@@ -1,0 +1,17 @@
+.header {
+  background: url("../../assets/desktop/bg-pattern-header.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.switch {
+  font-weight: bold;
+}

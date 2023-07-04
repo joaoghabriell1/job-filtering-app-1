@@ -1,0 +1,5 @@
+.main-container {
+  width: min(1100px, 100% - 4.8rem);
+  margin-inline: auto;
+  position: relative;
+}

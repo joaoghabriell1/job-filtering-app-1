@@ -1,0 +1,28 @@
+.apply-btn {
+  background: var(--clr-primary-100);
+  border: 0;
+  padding: 1rem 3rem;
+  color: var(--clr-neutral-100);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.footer-container {
+  background: var(--clr-neutral-100);
+  margin-top: 6rem;
+  padding: 2.5rem;
+}
+
+.info-container {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .info-container {
+    display: inline-block;
+  }
+}

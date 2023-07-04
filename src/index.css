@@ -1,0 +1,67 @@
+:root {
+  /* colors */
+  --clr-primary-100: hsla(235, 69%, 61%);
+  --clr-primary-200: hsl(235, 82%, 77%);
+  --clr-primary-300: hsl(219, 29%, 14%);
+  --clr-primary-400: hsl(220, 29%, 10%);
+
+  /* neutral */
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(210, 22%, 96%);
+  --clr-neutral-300: hsl(211, 30%, 19%);
+  --clr-neutral-400: hsl(214, 17%, 51%);
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.6rem;
+  color: var(--clr-primary-400);
+  background: var(--clr-neutral-200);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--clr-primary-300);
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.color-lightgray {
+  color: var(--clr-neutral-400);
+}

@@ -1,0 +1,50 @@
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+h3 {
+  margin-block: 0.5rem;
+}
+
+span {
+  color: var(--clr-neutral-400);
+}
+
+.flex-container {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.job-card {
+  background: var(--clr-neutral-100);
+  padding: 3rem;
+  padding-top: 4.6rem;
+  position: relative;
+  border-radius: 0.7rem;
+}
+
+.job-card:hover {
+  cursor: pointer;
+}
+
+.job-card__logo-container {
+  position: absolute;
+  top: -2.7rem;
+  padding: 1.3rem;
+  border-radius: 1.5rem;
+}
+
+.span--secondary {
+  color: var(--clr-primary-100);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+div:has(> .span--secondary) {
+  margin-top: 4rem;
+}

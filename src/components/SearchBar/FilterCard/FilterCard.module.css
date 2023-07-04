@@ -1,0 +1,99 @@
+.filter-card {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: min(700px, 100%);
+  position: absolute;
+  top: 70%;
+  padding: 2.4rem;
+  z-index: 2;
+  background: var(--clr-neutral-100);
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.input-container img {
+  height: 2rem;
+  width: 1.7rem;
+}
+
+.input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+}
+label:hover,
+select:hover,
+option:hover {
+  cursor: pointer;
+}
+input {
+  margin: 0;
+}
+
+.btn {
+  width: 100%;
+  background: var(--clr-primary-100);
+  color: var(--clr-neutral-100);
+  border: 0;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.checkbox-label {
+  font-weight: bold;
+}
+
+@media (min-width: 700px) {
+  .filter-card {
+    position: static;
+    width: auto;
+    top: 70%;
+    padding: 0;
+    z-index: 0;
+    border-radius: none;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 60%;
+  }
+  .input-container:nth-child(1) {
+    padding-left: 2.3rem;
+    flex-basis: 50%;
+    min-width: 195px;
+  }
+  .input-container:nth-child(2) {
+    flex: 1;
+  }
+
+  .input-container:nth-child(1):after {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    bottom: -1.5rem;
+    right: -1rem;
+    border-left: 1px solid rgba(61, 47, 47, 0.406);
+  }
+
+  .btn {
+    width: 12rem;
+    background: var(--clr-primary-100);
+    color: var(--clr-neutral-100);
+    border: 0;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (700px <= min-width <= 800px) {
+}

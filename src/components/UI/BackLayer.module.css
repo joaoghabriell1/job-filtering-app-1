@@ -1,0 +1,9 @@
+@media (max-width: 700px) {
+  .backLayer {
+    position: absolute;
+    inset: -100%;
+    background: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+}
