@@ -9,7 +9,6 @@ import Context from "../../store/filter-context";
 
 const SearchBar = () => {
   const context = useContext(Context);
-  const [width, setWidth] = useState(window.innerWidth);
   const [mobileFilterCard, setMobileFilterCard] = useState(false);
   const [filters, setFilters] = useState({
     "company-position": "",
@@ -21,9 +20,6 @@ const SearchBar = () => {
     ? (document.body.style.overflow = "hidden")
     : (document.body.style.overflow = "auto");
 
-  window.addEventListener("resize", function (event) {
-    setWidth(window.innerWidth);
-  });
 
   const filterCardHandler = () => {
     setMobileFilterCard((prev) => {
@@ -65,9 +61,10 @@ const SearchBar = () => {
     setMobileFilterCard(false);
   };
 
+
   return (
     <MainContainer>
-      <div className={classes["searchbar"]}>
+      <div  className={classes["searchbar"]}>
         <div className={classes["flex-container"]}>
           <div className={classes["searchbar__input-container"]}>
             <label htmlFor="company-position">
@@ -78,7 +75,7 @@ const SearchBar = () => {
                 id="company-position"
                 name="company-position"
                 type="text"
-                placeholder="Filter by company..."
+                placeholder="Filter by company or position..."
               />
             </label>
             <div className={classes["vl"]}></div>
@@ -98,23 +95,14 @@ const SearchBar = () => {
             </button>
           </div>
         </div>
-        {width <= 700 && mobileFilterCard ? (
           <FilterCard
             jobs={context.fullJobList}
             filters={filters}
+            showCard={mobileFilterCard}
             onSearch={onSearchHandler}
             onChange={onChangeHandler}
             onClick={filterCardHandler}
           />
-        ) : null}
-        {width >= 700 && (
-          <FilterCard
-            jobs={context.fullJobList}
-            onSearch={onSearchHandler}
-            filters={filters}
-            onChange={onChangeHandler}
-          />
-        )}
       </div>
     </MainContainer>
   );

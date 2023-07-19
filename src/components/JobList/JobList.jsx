@@ -33,7 +33,7 @@ const JobList = () => {
   if (!ctx.hasData) {
     error = (
       <div className={classes["error-message"]}>
-        <p>Não há dados correspondentes</p>
+        <p>No jobs were found!</p>
       </div>
     );
   }

@@ -54,7 +54,17 @@ input {
   font-weight: bold;
 }
 
+@media (max-width:700px){
+  .displaynone{
+    display: none !important;
+  }
+  .displaynone>*{
+    display: none !important;
+  }
+}
+
 @media (min-width: 700px) {
+ 
   .filter-card {
     position: static;
     width: auto;

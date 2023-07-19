@@ -8,6 +8,7 @@
   padding-inline: 2.4rem;
 }
 
+
 .flex-container {
   display: flex;
   align-items: center;
@@ -26,6 +27,7 @@
   outline: 0;
 }
 
+
 .mobile-actions {
   display: flex;
 }
@@ -43,6 +45,24 @@
 .mobile-actions__btn img {
   height: 2rem;
   width: 2rem;
+}
+@media(max-width:500px){
+  .searchbar__input::placeholder {
+    outline: 0;
+    font-size: 1.2rem;
+  }
+
+  .mobile-actions__btn {
+    background: none;
+    padding-inline: 1rem;
+    border: 0;
+  }
+
+  .mobile-actions__btn img {
+    height: 1.5rem;
+    width: 1.5rem;
+
+  }
 }
 
 @media (min-width: 700px) {

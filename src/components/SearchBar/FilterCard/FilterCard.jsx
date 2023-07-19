@@ -3,6 +3,7 @@ import locationIcon from "../../../assets/desktop/icon-location.svg";
 import BackLayer from "../../UI/BackLayer";
 
 const FilterCard = (props) => {
+  const {showCard}= props;
   const locations = props.jobs.map((element, index, array) => {
     const newArray = array.slice(0, index).map((element) => {
       return element.location;
@@ -12,11 +13,10 @@ const FilterCard = (props) => {
     }
     return <option key={index}>{element.location}</option>;
   });
-
   return (
     <>
-      <BackLayer onClick={props.onClick} />
-      <div className={classes["filter-card"]}>
+      <BackLayer showCard={showCard} onClick={props.onClick} />
+      <div className={`${ showCard ? classes["filter-card"]:classes["displaynone"]} ${classes["filter-card"]}`}>
         <div className={classes["input-container"]}>
           <label htmlFor="location" aria-label="location">
             <img src={locationIcon} alt="" />
