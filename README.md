@@ -18,6 +18,7 @@ npm install
 
 ```
 npm run dev
+```
 
 ### The idea
 
